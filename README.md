@@ -14,11 +14,11 @@ Create a folder under RAILS_ROOT/lib called paperclip_processors, and drop resiz
 Now you can pass :resizer as a Paperclip processor in the has_attached_file options hash. Example:
 
 ```
-  has_attached_file :avatar
-    :processors => [:resizer],
-    :styles => {
-      :thumb=> "100x100",
-      :small  => "150x150" }
+has_attached_file :avatar
+  :processors => [:resizer],
+  :styles => {
+    :thumb=> "100x100",
+    :small  => "150x150" }
 ```
 
 And voilá! Your images will now be processed with Imlib2. Easy peasy, right?
