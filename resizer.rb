@@ -18,7 +18,7 @@ module Paperclip
 
 			@file                = file
 			begin
-				@img                 = Imlib2::Image.load(file.path)
+				@img               = Imlib2::Image.load(file.path)
 			rescue Imlib2::Error::UNKNOWN
 				raise PaperclipError("Unknown error while loading image")
 			end

@@ -1,6 +1,6 @@
 ## Imlib2 Image Processor for Paperclip
 
-Lets you process thumbnails with Paperclip using imlib2, a lighter option to ImageMagick.
+Lets you process thumbnails with Paperclip using imlib2, a lighter alternative to ImageMagick.
 
 ## Requirements
 
@@ -9,7 +9,9 @@ Lets you process thumbnails with Paperclip using imlib2, a lighter option to Ima
 
 ## Installation
 
-Create a folder under RAILS_ROOT/lib called paperclip_processors, and drop resizer.rb in it. Now you can pass :resizer as a Paperclip processor in the has_attached_file options hash. Example:
+Create a folder under RAILS_ROOT/lib called paperclip_processors, and drop resizer.rb in it. Paperclip automatically loads processors available in that path.
+
+Now you can pass :resizer as a Paperclip processor in the has_attached_file options hash. Example:
 
 ```
   has_attached_file :avatar
